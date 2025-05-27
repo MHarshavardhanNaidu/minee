@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Modal functionality
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modalImage');
     const closeButton = document.querySelector('.close-button');
@@ -7,16 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.navbar nav');
 
-    // View CV modal
+    // CV buttons functionality
     viewCVButton.addEventListener('click', () => {
-        modalImg.src = 'https://raw.githubusercontent.com/MHarshavardhanNaidu/Python-project/main/Dream%20.CV.jpg';
+        modalImg.src = 'https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg';
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
 
-    // Download CV
     downloadCVButton.addEventListener('click', () => {
-        window.open('https://raw.githubusercontent.com/MHarshavardhanNaidu/Python-project/main/Dream%20.CV.jpg', '_blank');
+        window.open('https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg', '_blank');
     });
 
     // Close modal
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth',
                     block: 'start'
                 });
+                // Close mobile menu if open
                 if (window.innerWidth <= 768) {
                     nav.style.display = 'none';
                 }
@@ -54,19 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navbar background and hide-on-scroll
+    // Navbar background change on scroll
     const navbar = document.querySelector('.navbar');
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-
+        
         if (currentScroll > lastScroll && currentScroll > 100) {
             navbar.style.transform = 'translateY(-100%)';
         } else {
             navbar.style.transform = 'translateY(0)';
         }
-
+        
         if (currentScroll > 50) {
             navbar.style.backgroundColor = 'rgba(15, 15, 15, 0.95)';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
@@ -74,11 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.backgroundColor = 'rgba(15, 15, 15, 0.8)';
             navbar.style.boxShadow = 'none';
         }
-
+        
         lastScroll = currentScroll;
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -93,10 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
+    // Observe all sections and cards
     document.querySelectorAll('.section, .skill-card, .project-card, .achievement-card, .contact-card').forEach(element => {
         observer.observe(element);
     });
-
-    // Load Lucide icons
-    lucide.createIcons();
 });
