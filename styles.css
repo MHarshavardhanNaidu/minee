@@ -276,22 +276,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Section Icons */
-.section-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 10px;
-    stroke: var(--primary);
-}
-
-.card-icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--primary);
-    margin-bottom: 1rem;
-}
-
 /* Skills Section */
 .card-grid {
     display: grid;
@@ -308,9 +292,6 @@ body {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .skill-card:hover {
@@ -363,9 +344,6 @@ body {
 
 .project-content {
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .project-card h3 {
@@ -437,10 +415,6 @@ body {
     color: var(--text-muted);
 }
 
-.achievement-card .card-icon {
-    margin-bottom: 0;
-}
-
 /* Contact Section */
 .contact-grid {
     display: grid;
@@ -458,9 +432,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .contact-card:hover {
@@ -490,12 +461,6 @@ body {
 
 .contact-card a:hover {
     color: var(--primary-dark);
-}
-
-.contact-card .card-icon {
-    margin-bottom: 1.5rem;
-    width: 32px;
-    height: 32px;
 }
 
 /* Footer */
