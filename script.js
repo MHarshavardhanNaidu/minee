@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // CV buttons functionality
     viewCVButton.addEventListener('click', () => {
-        modalImg.src = 'https://github.com/MHarshavardhanNaidu/Python-project/blob/main/Dream%20.CV.jpg';
+        modalImg.src = 'https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg';
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
 
     downloadCVButton.addEventListener('click', () => {
-        window.open('https://github.com/MHarshavardhanNaidu/Python-project/blob/main/Dream%20.CV.jpg', '_blank');
+        window.open('https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg', '_blank');
     });
 
     // Close modal
@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll > lastScroll && currentScroll > 100) {
             navbar.style.transform = 'translateY(-100%)';
         } else {
             navbar.style.transform = 'translateY(0)';
         }
-        
+
         if (currentScroll > 50) {
             navbar.style.backgroundColor = 'rgba(15, 15, 15, 0.95)';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.backgroundColor = 'rgba(15, 15, 15, 0.8)';
             navbar.style.boxShadow = 'none';
         }
-        
+
         lastScroll = currentScroll;
     });
 
