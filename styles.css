@@ -216,15 +216,20 @@ body {
     flex: 1;
     max-width: 400px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
     position: relative;
     z-index: 2;
-    border: 3px solid rgba(0, 255, 247, 0.2);
+    border: 4px solid rgba(0, 255, 247, 0.2);
 }
 
 .hero-image-bg {
@@ -234,9 +239,90 @@ body {
     width: 100%;
     height: 100%;
     background: var(--gradient);
-    border-radius: 20px;
+    border-radius: 50%;
     opacity: 0.2;
     filter: blur(20px);
+}
+
+/* Section Icons */
+.section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-icon {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+/* Skills Section */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--gradient);
+    margin-bottom: 1.5rem;
+}
+
+.skill-icon i {
+    font-size: 2rem;
+    color: var(--bg-dark);
+}
+
+/* Projects Section */
+.project-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--gradient);
+    margin-bottom: 1.5rem;
+}
+
+.project-icon i {
+    font-size: 1.5rem;
+    color: var(--bg-dark);
+}
+
+/* Achievement Icons */
+.achievement-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--gradient);
+    flex-shrink: 0;
+}
+
+.achievement-icon i {
+    font-size: 1.5rem;
+    color: var(--bg-dark);
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--gradient);
+    margin: 0 auto 1.5rem;
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+    color: var(--bg-dark);
 }
 
 /* Sections */
@@ -298,14 +384,6 @@ body {
     transform: translateY(-5px);
     border-color: var(--primary);
     box-shadow: 0 10px 20px rgba(0, 255, 247, 0.1);
-}
-
-.skill-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1.5rem;
-    border-radius: 12px;
-    background: var(--gradient);
 }
 
 .skill-card h3 {
@@ -398,14 +476,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 255, 247, 0.1);
 }
 
-.achievement-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--gradient);
-    flex-shrink: 0;
-}
-
 .achievement-content h3 {
     color: var(--text);
     margin-bottom: 0.5rem;
@@ -427,7 +497,7 @@ body {
 .contact-card {
     background: rgba(26, 26, 26, 0.5);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 2px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -438,14 +508,6 @@ body {
     transform: translateY(-5px);
     border-color: var(--primary);
     box-shadow: 0 10px 20px rgba(0, 255, 247, 0.1);
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 1.5rem;
-    border-radius: 50%;
-    background: var(--gradient);
 }
 
 .contact-card h3 {
@@ -532,7 +594,12 @@ body {
 
     .hero-image {
         max-width: 300px;
-        margin: 0 auto;
+        margin: 2rem auto 0;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
     }
 
     .footer-nav {
