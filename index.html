@@ -6,184 +6,216 @@
     <title>Harsha Vardhan | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <img id="modalImage" src="" alt="Resume">
-            <button class="close-button">&times;</button>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Resume">
+        <button class="close-button">&times;</button>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="logo">MHVN</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+        <button id="downloadCV" class="btn">Download CV</button>
+    </div>
+    <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<section id="about" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>M Harsha Vardhan Naidu</span></h1>
+            <p class="title">Aspiring Data Scientist & Tech Enthusiast</p>
+            <p class="subtitle">B.Tech CSE @ LPU | Python • Java • C • Web Dev</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <button id="viewCV" class="btn secondary">View CV</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://res.cloudinary.com/drjrvslxm/image/upload/f_auto,q_auto/rcxaffrzgzvaerlpclxs" alt="Harsha Vardhan">
+            <div class="hero-image-bg"></div>
         </div>
     </div>
+</section>
 
-    <header class="navbar">
-        <div class="logo">MHVN</div>
-        <nav>
+<section id="skills" class="section">
+    <h2><i class="ri-code-line section-icon"></i>Skills</h2>
+    <div class="card-grid">
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="ri-code-s-slash-line"></i>
+            </div>
+            <h3>Programming</h3>
+            <p>C, C++, Java, Python</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="ri-global-line"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="ri-database-2-line"></i>
+            </div>
+            <h3>Data Science</h3>
+            <p>Pandas, Excel, Tableau</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="ri-tools-line"></i>
+            </div>
+            <h3>Tools</h3>
+            <p>Git, Canva, Photoshop</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2><i class="ri-folder-line section-icon"></i>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-icon">
+                    <i class="ri-lock-password-line"></i>
+                </div>
+                <h3>Password Generator</h3>
+                <p>Python-based password generator with customizable features.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Security</span>
+                    <span>CLI</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-icon">
+                    <i class="ri-movie-line"></i>
+                </div>
+                <h3>Movie Booking System</h3>
+                <p>Java project with user input and database simulation.</p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Database</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-icon">
+                    <i class="ri-bar-chart-line"></i>
+                </div>
+                <h3>HR Analytics Dashboard</h3>
+                <p>Tableau project to visualize employee insights.</p>
+                <div class="project-tags">
+                    <span>Tableau</span>
+                    <span>Data Viz</span>
+                    <span>Analytics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="section">
+    <h2><i class="ri-award-line section-icon"></i>Achievements</h2>
+    <div class="achievements-list">
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="ri-medal-line"></i>
+            </div>
+            <div class="achievement-content">
+                <h3>Responsive Web Design Certificate</h3>
+                <p>FreeCodeCamp</p>
+            </div>
+        </div>
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="ri-code-box-line"></i>
+            </div>
+            <div class="achievement-content">
+                <h3>Advanced C/C++</h3>
+                <p>Coursera</p>
+            </div>
+        </div>
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="ri-database-2-line"></i>
+            </div>
+            <div class="achievement-content">
+                <h3>Data Science & Engineering</h3>
+                <p>LPU</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2><i class="ri-contacts-line section-icon"></i>Contact Me</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="ri-mail-line"></i>
+            </div>
+            <h3>Email</h3>
+            <a href="mailto:mes.mharshavardhan@gmail.com">mes.mharshavardhan@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="ri-phone-line"></i>
+            </div>
+            <h3>Phone</h3>
+            <a href="tel:+917981459989">+91 7981459989</a>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="ri-linkedin-line"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/mullagura-harsha-vardhan-naidu-545b86294" target="_blank">Profile</a>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="ri-github-line"></i>
+            </div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/MHarshavardhanNaidu" target="_blank">Repo</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">MHVN</div>
+        <nav class="footer-nav">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="actions">
-            <button id="downloadCV" class="btn">Download CV</button>
-        </div>
-        <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+        <p class="copyright">© 2025 Harsha Vardhan. All rights reserved.</p>
+    </div>
+</footer>
 
-    <section id="about" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm <span>M Harsha Vardhan Naidu</span></h1>
-                <p class="title">Aspiring Data Scientist & Tech Enthusiast</p>
-                <p class="subtitle">B.Tech CSE @ LPU | Python • Java • C • Web Dev</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn primary">Contact Me</a>
-                    <button id="viewCV" class="btn secondary">View CV</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://drive.google.com/file/d/1I5dK8zIvw_ovqfyAEfcIdgWlQrxzbXmJ/view?usp=sharing" alt="Harsha Vardhan">
-                <div class="hero-image-bg"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="card-grid">
-            <div class="skill-card">
-                <div class="skill-icon programming"></div>
-                <h3>Programming</h3>
-                <p>C, C++, Java, Python</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon webdev"></div>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon datascience"></div>
-                <h3>Data Science</h3>
-                <p>Pandas, Excel, Tableau</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon tools"></div>
-                <h3>Tools</h3>
-                <p>Git, Canva, Photoshop</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>Password Generator</h3>
-                    <p>Python-based password generator with customizable features.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Security</span>
-                        <span>CLI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>Movie Booking System</h3>
-                    <p>Java project with user input and database simulation.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Database</span>
-                        <span>UI/UX</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>HR Analytics Dashboard</h3>
-                    <p>Tableau project to visualize employee insights.</p>
-                    <div class="project-tags">
-                        <span>Tableau</span>
-                        <span>Data Viz</span>
-                        <span>Analytics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="achievements" class="section">
-        <h2>Achievements</h2>
-        <div class="achievements-list">
-            <div class="achievement-card">
-                <div class="achievement-icon"></div>
-                <div class="achievement-content">
-                    <h3>Responsive Web Design Certificate</h3>
-                    <p>FreeCodeCamp</p>
-                </div>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-icon"></div>
-                <div class="achievement-content">
-                    <h3>Advanced C/C++</h3>
-                    <p>Coursera</p>
-                </div>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-icon"></div>
-                <div class="achievement-content">
-                    <h3>Data Science & Engineering</h3>
-                    <p>LPU</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <div class="contact-icon email"></div>
-                <h3>Email</h3>
-                <a href="mailto:mes.mharshavardhan@gmail.com">mes.mharshavardhan@gmail.com</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon phone"></div>
-                <h3>Phone</h3>
-                <a href="tel:+917981459989">+91 7981459989</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon linkedin"></div>
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/mullagura-harsha-vardhan-naidu-545b86294" target="_blank">Profile</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon github"></div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/MHarshavardhanNaidu" target="_blank">Repo</a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">MHVN</div>
-            <nav class="footer-nav">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="copyright">© 2025 Harsha Vardhan. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
