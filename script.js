@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     downloadCVButton.addEventListener('click', () => {
-        window.open('https://github.com/MHarshavardhanNaidu/Python-project/blob/main/Dream%20.CV.jpg', '_blank');
+        window.open('.,..,', '_blank');
     });
 
     // Close modal
