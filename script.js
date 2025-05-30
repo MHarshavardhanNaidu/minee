@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // CV buttons functionality
     viewCVButton.addEventListener('click', () => {
-        modalImg.src = 'https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg';
+        modalImg.src = 'https://github.com/MHarshavardhanNaidu/Python-project/blob/main/Dream%20.CV.jpg';
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
 
     downloadCVButton.addEventListener('click', () => {
-        window.open('https://raw.githubusercontent.com/MHarshavardhanNaidu/MHarshavardhanNaidu/main/Harsha%20Resume.jpg', '_blank');
+        window.open('https://github.com/MHarshavardhanNaidu/Python-project/blob/main/Dream%20.CV.jpg', '_blank');
     });
 
     // Close modal
